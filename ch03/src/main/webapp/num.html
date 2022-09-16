@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function chk() {
+		if (frm.num>=65535) {
+			alert("숫자가 너무 큽니다(65535이하로 입력)");
+		}
+	}
+</script>
+</head>
+<body>
+ <h1>숫자를 입력하세요</h1>
+<!--  <form action="num.jsp" name="frm"> -->
+<!-- <form action="num2.jsp" name="frm"> -->
+ <form action="num3.jsp" name="frm" onsubmit="chk">
+	 숫자 : <input type="text" name="num"><p>
+	 <input type="submit" value="확인">
+ </form>
+</body>
+</html>
